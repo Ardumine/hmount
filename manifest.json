@@ -1,0 +1,20 @@
+{
+  "name": "HCore.Packages.HMount",
+  "version": "1.0.0",
+  "baseVersion": "1.0.0",
+  "description": "Fstab mounter — mounts filesystems at boot from /etc/fstab, with mount/unmount shell commands",
+  "commands": [
+    {
+      "name": "mount",
+      "description": "mount <source> <mountpoint> <type> [options]   Mount a filesystem",
+      "mode": "oneshot",
+      "moduleName": "HCore.Packages.HMount.MountCmd"
+    },
+    {
+      "name": "unmount",
+      "description": "unmount <mountpoint>   Unmount a filesystem",
+      "mode": "oneshot",
+      "moduleName": "HCore.Packages.HMount.UnmountCmd"
+    }
+  ]
+}
